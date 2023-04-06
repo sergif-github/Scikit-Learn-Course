@@ -77,7 +77,24 @@ print("In non supervised learning we will need to predict patrons in inputs or i
 print("In supervised learning we have regression problems (numerical) or classification problems (categories)")
 print("We have a classification supervised learning problem")
 print("To find the best model we will use support vector machines, decision tree, naive bayes and logistic regression")
-
+print("In a binary classification problem, SVMs are based on the idea of finding a hyperplane in a high-dimensional"
+      " space that separates the different classes of data points. In many cases, the data points may not be linearly "
+      "separable. In these cases, SVMs use a technique called kernel trick to transform the data into a "
+      "higher-dimensional space, where it may become linearly separable")
+print("A DecisionTreeClassifier works by building a decision tree from the training data, which consists of a series"
+      " of binary decisions that partition the feature space into regions corresponding to different classes."
+      " The tree is constructed by recursively splitting the data based on the feature that best separates "
+      "the classes at each step, until a stopping criterion is met.")
+print("Gaussian Naive Bayes is a probabilistic classification algorithm based on Bayes' theorem. It is called naive"
+      " because it assumes that the features are independent of each other. Specifically, the algorithm computes"
+      " the mean and variance of the feature values for each class, and uses these to estimate the probability density "
+      "function of the features for each class. Given a new data point with feature values x, the algorithm computes"
+      " the posterior probability of each class using Bayes' theorem, and predicts the class with highest probability.")
+print("Logistic Regression is a supervised machine learning algorithm used for binary classification tasks."
+      " The algorithm learns the relationship between the input features and the target variable by estimating the "
+      "parameters of a logistic function, also called the sigmoid function. The logistic function takes the linear "
+      "combination of the input features and their corresponding weights, and maps it to a probability score between"
+      " 0 and 1. The probability score can then be thresholded to make binary predictions.")
 
 # print("\nCreate our models and fit them with train data")
 # print("Using support vector machine (SVM)")
@@ -102,9 +119,11 @@ lr.fit(train_x_vector, train_y)
 
 print("\nTo evaluate out model we need to remeber:")
 print("Score is the number of data used")
-print("Precision is the proportion of correct predictions from positive inputs and the total positive predictions (TP / TP + FP)")
+print("Precision is the proportion of correct predictions from positive inputs and the total positive predictions "
+      "(TP / TP + FP)")
 print("Precision focus is to detect false positives so if false positives are 0, precision will be 1")
-print("Recall or sensitivity is the proportion of correct predictions from positive inputs and the total of positive inputs (TP / TP + FN)")
+print("Recall or sensitivity is the proportion of correct predictions from positive inputs and the total of positive "
+      "inputs (TP / TP + FN)")
 print("Recall focus is to detect false negatives so if false negatives are 0, recall will be 1")
 print("F1-score is a combination of precision and recall in one metric")
 print("Accuracy is the proportion of correctly classified data (TP + TN) / (TP + TN + FP + FN)")
