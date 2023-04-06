@@ -15,7 +15,7 @@ print("\nReading IMDB Dataset.csv")
 df_review = pd.read_csv('IMDB Dataset.csv')
 print(df_review)
 
-print("\nSelecting first 9000 and 1000 with positive and negative sentiment respectly")
+print("\nSelecting first 9000 and 1000 with positive and negative sentiment respectively")
 df_review_positive = df_review[df_review['sentiment'] == 'positive'][:9000]
 df_review_negative = df_review[df_review['sentiment'] == 'negative'][:1000]
 df_review_reduced_des = pd.concat([df_review_positive, df_review_negative])
@@ -24,9 +24,9 @@ print("Sentiment counts:", df_review.value_counts('sentiment'))
 
 
 # Dataset reduce
-# Oversampling -> Generates new random data
-# Undersampling -> Reduce to random existent data
-rus = RandomUnderSampler(random_state=42) # With fixed random seed
+# Over sampling -> Generates new random data
+# Under sampling -> Reduce to random existent data
+rus = RandomUnderSampler(random_state=42)  # With fixed random seed
 df_review_bal, df_review_bal['sentiment'] = rus.fit_resample(df_review_reduced_des[['review']], df_review_reduced_des[['sentiment']])
 print("\nWe have a reduced balanced dataset", df_review_bal)
 print("Sentiment counts:", df_review_bal.value_counts('sentiment'))
@@ -117,7 +117,7 @@ lr = LogisticRegression()
 lr.fit(train_x_vector, train_y)
 
 
-print("\nTo evaluate out model we need to remeber:")
+print("\nTo evaluate out model we need to remember:")
 print("Score is the number of data used")
 print("Precision is the proportion of correct predictions from positive inputs and the total positive predictions "
       "(TP / TP + FP)")
@@ -165,35 +165,3 @@ print("Our new SVM best penalization parameter C:", svc_grid.best_estimator_)
 print("Our new SVM best kernel:", svc_grid.best_params_)
 print("Our new SVM best score:", svc_grid.best_score_)
 print("Our last SVM score:", svc.score(test_x_vector, test_y))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
