@@ -9,6 +9,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import f1_score, classification_report, confusion_matrix
 from sklearn.model_selection import GridSearchCV
 
+# Problem to solve: Find a positive / negative classifier based on text opinions
+
 # Import and show dataset
 # Dataset -> https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 print("\nReading IMDB Dataset.csv")
