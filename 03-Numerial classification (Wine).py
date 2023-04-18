@@ -32,7 +32,7 @@ print("\nHow many null values we have?\n", wine.isnull().sum())
 # Preprocessing data
 print("\nWe have this quality possible values:", wine['quality'].unique())
 bins = (2, 6.5, 8)
-group_names = ['bad', 'good']  # Change quality numbers to two categories
+group_names = ['bad', 'good']  # Change quality categories to two numbers
 wine['quality'] = pd.cut(wine['quality'], bins=bins, labels=group_names)
 print("Now we have this possible values:", wine['quality'].unique())
 label_quality = LabelEncoder()  # Encode the bad / good values to a 0 or 1
