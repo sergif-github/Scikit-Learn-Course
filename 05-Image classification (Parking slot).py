@@ -9,6 +9,8 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 
+# Problem to solve: Find a classifier to split between free / occupied parking slot image
+
 # Get & label data
 input_dir = 'C:/Users/coronis/Pictures/clf-data'
 categories = ['empty', 'not_empty']

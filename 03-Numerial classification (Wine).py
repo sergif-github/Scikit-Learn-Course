@@ -20,6 +20,8 @@ from sklearn.metrics import confusion_matrix, classification_report, accuracy_sc
 from sklearn.preprocessing import StandardScaler, LabelEncoder   # Preprocessing
 from sklearn.model_selection import train_test_split   # Preprocessing
 
+# Problem to solve: Find a classifier to split between good and bad wines
+
 # Load dataset
 wine = pd.read_csv('winequality-red.csv', sep=';')
 print("First dataset rows:\n", wine.head())  # View head rows, we see 11 features
@@ -38,9 +40,9 @@ wine['quality'] = label_quality.fit_transform(wine['quality'])
 print("\nFirst 10 dataset rows:\n", wine.head(10))  # View head rows, we see 11 features
 print("\nQuality value counts: ", wine['quality'].value_counts())
 # sns.barplot(x=wine['quality'].value_counts().index, y=wine['quality'].value_counts().values)
-# sns.countplot(wine['quality']) ??
-# sns.countplot(x='quality', data=wine)
-# plt.show()
+# sns.countplot(wine['quality']) Not working?
+sns.countplot(x='quality', data=wine)
+plt.show()
 
 # Dataset split
 X = wine.drop('quality', axis=1)    # inputs
