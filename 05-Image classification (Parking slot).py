@@ -1,4 +1,4 @@
-# Data -> https://drive.google.com/file/d/11DyZ165lZGzULEZSQNofyy9A8xaYgFJ2/view
+# Dataset -> https://drive.google.com/file/d/11DyZ165lZGzULEZSQNofyy9A8xaYgFJ2/view
 
 import os
 import numpy as np

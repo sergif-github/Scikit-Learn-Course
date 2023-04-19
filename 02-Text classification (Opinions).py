@@ -7,7 +7,6 @@ from sklearn.svm import SVC
 
 # Problem to solve: Find a classifier to split opinions between camera and car text opinions
 
-
 # Analyzing data
 # Dataset -> https://www.kaggle.com/datasets/jyotiprasadpal/eopinionscom-product-reviews
 print("\nReading dataset Eopinions.csv")

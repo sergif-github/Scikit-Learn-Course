@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor  # Regressor not classifier
+# Problem to solve: Find a predictor for the house prices
 
 # Load dataset
 dataset = pd.read_csv("housing.csv")

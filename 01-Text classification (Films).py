@@ -1,9 +1,3 @@
-# Types of learning
-# Supervised learning       -> Input labeled data to predict labels of new data
-# Unsupervised learning     -> Input no labeled data to learn patrons or structures.
-#                              (Clustering, dimensionality reduction, data association)
-# Reinforcement learning    -> Input states and actions to learn how to improve on best states and actions
-
 import pandas as pd
 from imblearn.under_sampling import RandomUnderSampler
 from sklearn.model_selection import train_test_split

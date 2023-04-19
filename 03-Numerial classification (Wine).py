@@ -1,14 +1,3 @@
-# Build on NumPy, SciPy and matplotlib
-# Simple and efficient tool for data mining and data analysis
-# Open source with very few restrictions (BSD licence)
-
-# Classification    ->      Identify which category and object belongs to (spam / not spam)
-# Regression        ->      Predicting and attribute associated with and object (Price prediction)
-# Clustering        ->      Automatic grouping of similar objects into sets (Customer segmentation)
-# Model selection   ->      Comparing, validating and choosing parameters and models (Improve model accuracy)
-# Dimensionality reduction  ->  Reducing the number of random variables to consider
-# Pre-processing    -> Feature extraction and normalization (Transform input data)
-
 import pandas as pd     # Data into dataframe
 import seaborn as sns   # Graphical view
 import matplotlib.pyplot as plt   # Graphical view
@@ -21,8 +10,8 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder   # Preprocessing
 from sklearn.model_selection import train_test_split   # Preprocessing
 
 # Problem to solve: Find a classifier to split between good and bad wines
-
 # Load dataset
+# Dataset -> https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009
 wine = pd.read_csv('winequality-red.csv', sep=';')
 print("First dataset rows:\n", wine.head())  # View head rows, we see 11 features
 print("\nDataset info:")
