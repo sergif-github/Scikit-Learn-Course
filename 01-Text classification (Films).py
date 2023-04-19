@@ -171,5 +171,5 @@ svc_grid = GridSearchCV(svc2, parameters, cv=5)
 svc_grid.fit(train_x_vector, train_y)
 print("Our new SVM best penalization parameter C:", svc_grid.best_estimator_)
 print("Our new SVM best kernel:", svc_grid.best_params_)
-print("Our new SVM best score:", svc_grid.best_score_)
-print("Our last SVM score:", svc.score(test_x_vector, test_y))
+print("Our new SVM best score:", svc_grid.best_score_)  # Best score
+print("Our new SVM mean score:", svc.score(test_x_vector, test_y))  # Mean score
