@@ -4,7 +4,7 @@ print("Unsupervised learning:    Extracting structure from data. Input no labele
 print("                          (Clustering, dimensionality reduction, data association)")
 print("Reinforcement learning:   Input states and actions to learn how to improve on best states and actions")
 
-print("Terminology")
+print("\nTerminology")
 print("Observation       ->      Each row of a dataset. Also known as sample, example, instance or record...")
 print("Feature           ->      Each column of a dataset. Also known as predictor, attribute, input or ind. variable")
 print("Response          ->      Each value we are predicting. Also known as target, outcome, label or dep. variable")
@@ -14,6 +14,17 @@ print("Clustering        ->      Grouping similar objects into sets (Customer se
 print("Pre-processing    ->      Feature extraction and normalization (Transform input data)")
 print("Dim. reduction    ->      In pre-processing, reducing the number of random variables to consider")
 print("Model selection   ->      Comparing, validating and choosing parameters and models (Improve model accuracy)")
+
+print("\nTrain / test split")
+print("Train / test split is useful because of its flexibility and speed. However, the chosen observations"
+      "\n     can provide a high-variances estimate of out-of-sample accuracy. One way to avoid it is K-fold."
+      "\n     K-fold cross-validation is useful when we have a limited dataset or in situations where the dataset is "
+      "\n     too small to be divided into separate training and testing sets. By using cross-validation, we can use "
+      "\n     all of the data for both training and testing, which can lead to more accurate performance metrics."
+      "\n     It is also helpful for assessing how well a model generalizes to new data."
+      "\n     It involves dividing the dataset into k equally sized folds and then using k-1 folds for training and "
+      "\n     the remaining fold for testing. This process is repeated k times, with each fold being used once as "
+      "\n     the test set. The final performance is calculated as the average of the performance of all k folds.")
 
 print("\nAbout scikit-learn")
 print("Scikit-learn is build on NumPy, SciPy and matplotlib. It's simple and efficient tool for data mining and "
@@ -49,7 +60,8 @@ print("SVM                    ->    Supervised learning method used for both cla
       "\n     Support vector machines are a supervised learning method that constructs one or a set of hyperplanes"
       "\n     in a high-dimensional space to separate the data points into different classes.")
 print("KNN                    ->    Supervised learning method used for classification and regression. "
-      "\n     It predicts based on the class labels of the k-nearest neighbors in the training set.")
+      "\n     It predicts based on the class labels of the k-nearest neighbors in the training set."
+      "\n     In general, the accuracy of a KNN model when K value increases will follow a Gaussian distribution .")
 print("Naive Bayes            ->    Naive Bayes is a supervised learning algorithm used for classification tasks."
       "\n     Is a probabilistic classification method based on Bayes' theorem. The algorithm first estimates "
       "\n     the prior probabilities of each class label based on the training data. Then, for each input feature,"
