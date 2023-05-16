@@ -16,7 +16,7 @@ pd.set_option("display.max_colwidth", None)  # Display without width limit to pr
 print(df.loc[0])  # Display only first row
 
 pd.set_option("display.max_colwidth", 50)   # Back to default display
-print(df.loc[0])
+
 
 print("\nPrint number of words in each text row:")
 print(df['text'].str.count(' '))  # Count whitespaces
